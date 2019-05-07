@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="hidden">
+            <div class="machine">
+                <audio class="win">
+                    <source src="./src/win.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="spin">
+                    <source src="./src/spin.mp3" type="audio/mpeg">
+                </audio>
+                <div class="machine_win"></div>
+                <button class="machine_remove button">Remove</button>
+                <div class="wheels_container">
+                </div>
+                <button class="machine_mute button">Mute</button>
+                <button class="machine_spin button">Spin</button>
+            </div>
+            <div class="machine_wheel"></div>
+            <img src="" alt="Slot machine image" class="image">
+        </div>
+    </main>
+    <footer>
+        <label for="wheels_number" class="footer_text">Wheels: </label>
+        <input type="number" name="wheels_number" id="wheels_number" max="5" min="2" value="3"/>
+        <label for="rows_number" class="footer_text">Rows: </label>
+        <input type="number" name="rows_number" id="rows_number" max="5" min="1" value="3"/>
+        <label for="min_coins_number" class="footer_text">Minimum coins: </label>
+        <input type="number" name="min_coins_number" id="min_coins_number" max="50" min="5" value="5"/>
+        <button id="add_machine" class="button">Add machine</button>
+        <label for="coins_number" class="footer_text">Coins: </label>
+        <input type="number" name="coins_number" id="coins_number" max="100" min="0" value="50"/>
+        <button id="add_coins" class="button">Add coins</button>
+        <span id="current_coins" class="footer_text"></span>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
